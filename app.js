@@ -1,32 +1,21 @@
 var express = require('express');
 var app = express();
-var mongoose = require('mongoose');
+var routes = require('./routes/index');
+var tweet = require('./routes/tweet');
 
 //Configure
 
 app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
-//mongoose.connect('mongodb://127.0.0.1/users');
-mongoose.connect('mongodb://127.0.0.1/fifatweetminem1');
-//var peopleSchema = new mongoose.Schema({ name: String});
-mongoose.model('xyz', {name: String});
-//var People = mongoose.model('people', peopleSchema);
 
 
 // Use middletier
 
+// Use Routes
 
-// Define routes
-app.get("/", function(req,res){
-  res.render("index");
-});
+app.use('/', routes);
+app.get('/tweet', tweet);
 
-app.get("/tweet", function(req,res){
-
-  mongoose.model('xyz','tweets').findOne(function(err, people){    //create a modles'xyz' and pass in the collection name
-     res.send(people)                                              //Find the first tweet with mongoDB findOne()
-  });
-});
 
 // Start server
 
