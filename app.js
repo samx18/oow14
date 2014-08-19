@@ -2,6 +2,8 @@ var express = require('express');
 var app = express();
 var routes = require('./routes/index');
 var tweet = require('./routes/tweet');
+//var ftweet = require('./models/ftweet');
+
 
 //Configure
 

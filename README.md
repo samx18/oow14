@@ -1,3 +1,14 @@
 # README
-There is nothing here to do, this is a test repository for OOW14. Move
+This is a test repository for OOW14. There is nothing here to do, move
 along..
+
+ o            o
+  \          /
+   \        /
+    :-'""'-:
+ .-'  ____  `-.
+( (  (_()_)  ) )
+ `-.   ^^   .-'
+    `._==_.'
+     __)(___
+
