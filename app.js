@@ -2,7 +2,6 @@ var express = require('express');
 var app = express();
 var routes = require('./routes/index');
 var tweet = require('./routes/tweet');
-//var ftweet = require('./models/ftweet');
 
 
 //Configure
@@ -24,5 +23,5 @@ app.get('/tweet', tweet);
 var port = process.env.PORT || 4000;
 
 app.listen(port,function(){
-  console.log('Server rocking on port '+port);
+  console.log('Server rocking on '+port+' All magic happens there');
 });
